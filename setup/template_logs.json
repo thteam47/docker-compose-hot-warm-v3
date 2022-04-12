@@ -1,0 +1,25 @@
+{
+  "index_patterns": ["testlog-*"],
+  "settings": {
+    "index.number_of_shards" : 1,
+    "index.number_of_replicas" : 1,
+    "lifecycle.name": "logs-hot-warm",
+    "lifecycle.rollover_alias": "test-logs" 
+  },
+  "mappings": {
+    "properties" : {
+      "name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "age":{
+          "type":"long"
+      }
+    }
+  }
+}

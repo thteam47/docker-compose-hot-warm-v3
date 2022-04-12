@@ -1,0 +1,7 @@
+{
+  "aliases": {
+    "test-logs":{
+      "is_write_index": true
+    }
+  }
+}
