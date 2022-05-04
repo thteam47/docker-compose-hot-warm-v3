@@ -27,9 +27,9 @@ docker stack deploy -c docker-compose.yml [name]
 Thực hiện thiết lập gán node trên các worker trên swarm:
 
 ```
-docker node update --label-add lbes01==true manager
-docker node update --label-add lbes02==true worker1
-docker node update --label-add lbes03==true worker2
+docker node update --label-add lbes01=true manager
+docker node update --label-add lbes02=true worker1
+docker node update --label-add lbes03=true worker2
 ```
 
 Thực hiện run file sh.
